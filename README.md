@@ -32,7 +32,18 @@ Remark by @bi7jta
 root@NanoPi-NEO:~# vi /root/NanoHatOLED/NanoHatOLED  
 root@NanoPi-NEO:~# ps -ef |grep oled  
 root       769   581  0 00:05 ?        00:00:00 sh -c cd /root/NanoHatOLED/BakeBit/Software/Python && python bakebit_nanohat_oled.py 2>&1 | tee /tmp/nanoled-python.log    
+
+cd ~  
+vi start_oled.sh
+add script to start_oled.sh
+cd /root/NanoHatOLED/BakeBit/Software/Python  
+sh -c cd /root/NanoHatOLED/BakeBit/Software/Python && python bakebit_nanohat_oled.py  
+
+chmod +x start_oled.sh   
+
+./start_oled.sh
 ```
+
 2) Add USB-WiFi configuration   
 
 ## License
