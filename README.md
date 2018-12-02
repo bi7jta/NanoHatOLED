@@ -28,14 +28,12 @@ The demo will automatically start at the next reboot.
 Remark by @bi7jta  
 ------------  
 1) Start and stop OLED program manually to migrate to Pi-Star  
+```
 root@NanoPi-NEO:~# vi /root/NanoHatOLED/NanoHatOLED  
 root@NanoPi-NEO:~# ps -ef |grep oled  
 root       769   581  0 00:05 ?        00:00:00 sh -c cd /root/NanoHatOLED/BakeBit/Software/Python && python bakebit_nanohat_oled.py 2>&1 | tee /tmp/nanoled-python.log    
-root       772   769  4 00:05 ?        00:00:09 python bakebit_nanohat_oled.py  
-root       773   769  0 00:05 ?        00:00:00 tee /tmp/nanoled-python.log   
-root      2250  1464  0 00:09 pts/0    00:00:00 grep --color=auto oled   
- 
-2) Increase USB-WiFi configuration  
+```
+2) Add USB-WiFi configuration   
 
 ## License
 
